@@ -1,0 +1,499 @@
+:root {
+    /*========== Colors ==========*/
+    --nav-color: #F5F5F5;
+    --nav-bg: #000000;
+    --text-color: #FFF;
+    --bg-btn-color: #EF5D60;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Raleway', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --normal-font-size: 1.3rem;
+
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background: url("../images/back-view-woman-doing-yoga-outdoors.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+
+
+body,
+button,
+input {
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.template {
+
+    backdrop-filter: blur(10px);
+    
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.70);
+    margin-bottom: 24px;
+}
+
+.header_inner {
+    display: flex;
+    padding: 33px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_inner .logo h2 {
+    font-size: var(--biggest-font-size);
+}
+
+.menu {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+
+
+.btn {
+
+    background-color: var(--bg-btn-color);
+    padding: 13px 67px;
+    text-align: center;
+}
+
+.body_container {
+    background: url('../images/Rectangle.png') no-repeat;
+    border-radius: 100px;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: 25px;
+    margin-bottom: 17px;
+    
+    
+}
+
+
+.item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #383838;
+    aspect-ratio: 1/1;
+    text-align: center;
+    color: var(--text-color);
+    width: calc(105px - 5px);
+    margin-right: 24px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+
+
+}
+
+.item:active {
+    background-color: var(--bg-btn-color);
+    border: 3px solid var(--text-color);
+
+}
+
+
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+ 
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    
+   
+  }
+
+  .item-carousel
+  {
+    
+    background-color: lightgray;
+    border-radius: 50px;
+    margin: 17px 14px 0 10px;
+    
+  }
+
+  .item-carousel img:hover
+  {
+    filter: brightness(70%);
+    cursor: url("../images/Frame.svg"), auto;
+      /*  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.08); */
+  }
+
+ 
+  .item-carousel img
+  {
+   width: 100%;
+   height: 100%;
+   border-radius: 50px;
+     
+  }
+/* 
+  .item-carousel:nth-child(1) img,
+  .item-carousel:nth-child(4) img,
+  .item-carousel:nth-child(7) {
+    background-color: var(--bg-btn-color);
+  } */
+
+
+  .carousel-item img:last-child
+  {
+    margin-right: 0;
+  }
+  
+  .carousel-button {
+    background-color: var(--nav-color);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 72px;
+    text-align: center;
+    aspect-ratio: 1/1;
+  }
+  
+  .carousel-button:hover
+  {
+    background-color: lightgray;
+    
+  }
+  .prev-button {
+    left: -74px; 
+  }
+  
+  .next-button {
+    right: -74px; 
+  }
+  
+  .ss
+  {
+    opacity: 0;
+    position: absolute;
+    top: 37%;
+    margin-left: 16px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: var(--text-color);
+    font-size: var(--biggest-font-size);
+    z-index: var(--z-tooltip);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  :root {
+    /*========== Colors ==========*/
+    --nav-color: #F5F5F5;
+    --nav-bg: #000000;
+    --text-color: #FFF;
+    --bg-btn-color: #EF5D60;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Raleway', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --normal-font-size: 1.3rem;
+
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background: url("../images/back-view-woman-doing-yoga-outdoors.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+
+
+body,
+button,
+input {
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.template {
+
+    backdrop-filter: blur(10px);
+    
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.70);
+    margin-bottom: 24px;
+}
+
+.header_inner {
+    display: flex;
+    padding: 33px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_inner .logo h2 {
+    font-size: var(--biggest-font-size);
+}
+
+.menu {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+
+
+.btn {
+
+    background-color: var(--bg-btn-color);
+    padding: 13px 67px;
+    text-align: center;
+}
+
+.body_container {
+    background: url('../images/Rectangle.png') no-repeat;
+    border-radius: 100px;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: 25px;
+    margin-bottom: 17px;
+    
+    
+}
+
+
+.item {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #383838;
+    aspect-ratio: 1/1;
+    text-align: center;
+    color: var(--text-color);
+    width: calc(105px - 5px);
+    margin-right: 24px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+
+
+}
+
+.item:active {
+    background-color: var(--bg-btn-color);
+    border: 3px solid var(--text-color);
+
+}
+
+
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+ 
+  }
+  
+  .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    
+   
+  }
+
+  .item-carousel
+  {
+    
+    border-radius: 50px;
+    margin: 17px 14px 0 10px;
+    
+  }
+
+  .item-carousel:hover img {
+    filter: brightness(70%);
+    cursor: url("../images/Frame.svg"), auto;
+    background: linear-gradient(1deg, #000 0.66%, rgba(0, 0, 0, 0.200) 99.44%)
+}
+
+ 
+  .item-carousel img
+  {
+   width: 100%;
+   height: 100%;
+   border-radius: 50px;
+     
+  }
+/* 
+  .item-carousel:nth-child(1) img,
+  .item-carousel:nth-child(4) img,
+  .item-carousel:nth-child(7) {
+    background-color: var(--bg-btn-color);
+  } */
+
+
+  .carousel-item img:last-child
+  {
+    margin-right: 0;
+  }
+  
+  .carousel-button {
+    background-color: var(--nav-color);
+    border-radius: 50px;
+    border: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 72px;
+    text-align: center;
+    aspect-ratio: 1/1;
+  }
+  
+  .carousel-button:hover
+  {
+    background-color: lightgray;
+    
+  }
+  .prev-button {
+    left: -74px; 
+  }
+  
+  .next-button {
+    right: -74px; 
+  }
+  
+  .ss
+  {
+    opacity: 0;
+    position: absolute;
+    top: 37%;
+    margin-left: 16px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: var(--text-color);
+    font-size: var(--biggest-font-size);
+    z-index: var(--z-tooltip);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .item-carousel:hover  .ss,
+  .item-carousel img:hover + .ss {
+    opacity: 1;
+    
+  }
+
+  .red-bg
+  {
+    background-color: var(--bg-btn-color);
+  }
+
+
+
+
+
+
+
